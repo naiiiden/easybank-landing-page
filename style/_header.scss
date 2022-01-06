@@ -21,7 +21,7 @@
         
         nav { 
             .nav-ul {
-                padding: 2rem;
+                padding: 2.75rem 2rem 2rem 2rem;
                 max-width: 85%;
                 list-style-type: none;
                 background: #fff;
@@ -35,12 +35,19 @@
                 margin: auto;
                 display: flex;
                 flex-direction: column;
+                justify-content: center;
                 align-items: center;
-                gap: 1rem;
+                gap: 1.25rem;
 
                 a {
                     text-decoration: none;
                     color: $dark-blue;
+                    font-size: 1rem;
+
+                    &.request {
+                        display: none;
+                        visibility: hidden;
+                    }
                 }
     
                 &.show {
@@ -81,6 +88,7 @@
                 color: $grayish-blue;
                 text-decoration: none;
                 cursor: pointer;
+                font-size: .9rem;
 
                 &.request {
                     padding: .75rem 1.25rem;
