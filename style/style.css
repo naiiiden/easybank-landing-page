@@ -364,4 +364,102 @@ img {
     text-align: start;
   }
 }
+
+.articles {
+  background: #fafafa;
+  padding: 3rem 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+}
+
+.articles h2 {
+  color: #2d314d;
+  font-weight: 400;
+}
+
+.articles .articles_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+}
+
+.articles .articles_wrapper .article_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.articles .articles_wrapper .article_container img {
+  max-height: 10rem;
+  border-top-left-radius: .5rem;
+  border-top-right-radius: .5rem;
+}
+
+.articles .articles_wrapper .article_container article {
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: .5rem;
+}
+
+.articles .articles_wrapper .article_container article small {
+  color: #9698a6;
+  font-size: .7rem;
+}
+
+.articles .articles_wrapper .article_container article h3 {
+  color: #2d314d;
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+
+.articles .articles_wrapper .article_container article p {
+  font-size: .9rem;
+  color: #9698a6;
+}
+
+@media screen and (min-width: 1024px) {
+  .articles {
+    padding: 5rem 10rem;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    gap: 2rem;
+  }
+  .articles h2 {
+    font-size: 2rem;
+  }
+  .articles .articles_wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .articles .articles_wrapper .article_container img {
+    max-height: 12.5rem;
+  }
+}
 /*# sourceMappingURL=style.css.map */
