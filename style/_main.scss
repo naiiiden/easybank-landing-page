@@ -2,6 +2,10 @@
     .main_image_wrapper {
         display: flex;
         flex-direction: column-reverse;
+
+        .mobilehide {
+            display: none;
+        }
     
         .image_bg {
             position: relative;

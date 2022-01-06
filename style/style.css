@@ -147,6 +147,9 @@ img {
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
   }
+  .main_image_wrapper .mobilehide {
+    display: none;
+  }
   .main_image_wrapper .image_bg {
     position: relative;
     height: 20rem;
@@ -265,6 +268,100 @@ img {
     right: 0;
     top: 0;
     max-width: 50%;
+  }
+}
+
+.choice {
+  background: #f3f4f6;
+  padding: 3rem 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 3rem;
+}
+
+.choice .why {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  gap: .5rem;
+}
+
+.choice .why h2 {
+  font-weight: 300;
+  color: #2d314d;
+  font-size: 1.75rem;
+}
+
+.choice .why p {
+  font-size: .9rem;
+  color: #9698a6;
+}
+
+.choice .sections_row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2.5rem;
+}
+
+.choice .sections_row section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  gap: 1rem;
+}
+
+.choice .sections_row section h3 {
+  font-weight: 300;
+  color: #2d314d;
+}
+
+.choice .sections_row section p {
+  font-size: .9rem;
+  color: #9698a6;
+}
+
+@media screen and (min-width: 1024px) {
+  .choice {
+    padding: 5rem 10rem;
+  }
+  .choice .why {
+    text-align: start;
+    width: 31rem;
+  }
+  .choice .sections_row {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .choice .sections_row section {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    text-align: start;
   }
 }
 /*# sourceMappingURL=style.css.map */
