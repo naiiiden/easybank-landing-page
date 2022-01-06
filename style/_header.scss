@@ -1,0 +1,97 @@
+@media screen and (max-width: 1023px) {
+    header {
+        width: 100%;
+        position: fixed;
+        background: $white;
+        padding: 1.25rem 0;
+        
+        .logo_button_wrapper {
+            width: 85%;
+            margin-inline: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .hamburger {
+            border: none;
+            background: none;
+            z-index: 99;
+        }
+        
+        nav { 
+            .nav-ul {
+                padding: 2rem;
+                max-width: 85%;
+                list-style-type: none;
+                background: #fff;
+                box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+                border-radius: .25rem;
+                z-index: 97;
+                position: fixed;
+                top: 100rem;
+                left: 0;
+                right: 0;
+                margin: auto;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 1rem;
+
+                a {
+                    text-decoration: none;
+                    color: $dark-blue;
+                }
+    
+                &.show {
+                    top: 5rem;
+                    transition: 0.3s ease;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2rem 10rem;
+        background: #fff;
+
+        .hamburger {
+            display: none;
+        }
+
+        nav {
+            flex-grow: 1;
+        }
+
+        .nav-ul {
+            .centered {
+                margin-left: auto;
+            }
+
+            list-style-type: none;
+            display: flex;
+            gap: 1.5rem;
+            
+            a {
+                color: $grayish-blue;
+                text-decoration: none;
+                cursor: pointer;
+
+                &.request {
+                    border: 1px solid red;
+                    background: green;
+                    color: $white;
+                    font-weight: 700;
+                }
+            }
+
+        }
+
+        
+    }
+}

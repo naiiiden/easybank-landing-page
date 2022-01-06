@@ -20,9 +20,12 @@ body {
     position: relative;
     font-size: 18px;
     font-family: Public Sans, sans-serif;
+    background: green;
 }
 
 img {
     max-width: 100%;
     height: auto;
 }
+
+@import "./header";
