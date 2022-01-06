@@ -16,7 +16,19 @@ footer {
                 list-style-type: none;
                 display: flex;
                 gap: .75rem;
+
+                a {
+                    svg {
+                        fill: $white;
+
+                        &:hover {
+                            fill: $lime-green;
+                        }
+                    }
+                }
             }
+
+            
         }
     }
 
@@ -38,6 +50,10 @@ footer {
                     color: $white;
                     text-decoration: none;
                     font-size: .9rem;
+
+                    &:hover {
+                        color: $lime-green;
+                    }
                 }
             }
         }
@@ -56,6 +72,10 @@ footer {
             background: linear-gradient(to right, #31d35c, #2bb7da);
             color: $white;
             font-weight: 700;
+
+            &:hover {
+                background: linear-gradient(to right, #5ef386, #54dafc);
+            }
         }
 
         p {

@@ -54,7 +54,7 @@ img {
     border-radius: .25rem;
     z-index: 97;
     position: fixed;
-    top: 100rem;
+    top: 999rem;
     left: 0;
     right: 0;
     margin: auto;
@@ -100,8 +100,10 @@ img {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    padding: 2rem 10rem;
+    padding: 0 10rem;
+    height: 5rem;
     background: #fff;
+    position: relative;
   }
   header .hamburger {
     display: none;
@@ -117,6 +119,37 @@ img {
     display: -ms-flexbox;
     display: flex;
     gap: 1.5rem;
+  }
+  header .nav-ul .underline {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 5rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header .nav-ul .underline .line {
+    bottom: 0;
+    width: 100%;
+    opacity: 0;
+    height: .25rem;
+    background: -webkit-gradient(linear, left top, right top, from(#31d35c), to(#2bb7da));
+    background: linear-gradient(to right, #31d35c, #2bb7da);
+    position: absolute;
+  }
+  header .nav-ul .underline:hover .line {
+    opacity: 1;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
   }
   header .nav-ul .centered {
     margin-left: auto;
@@ -134,6 +167,10 @@ img {
     background: linear-gradient(to right, #31d35c, #2bb7da);
     color: white;
     font-weight: 700;
+  }
+  header .nav-ul a.request:hover {
+    background: -webkit-gradient(linear, left top, right top, from(#5ef386), to(#54dafc));
+    background: linear-gradient(to right, #5ef386, #54dafc);
   }
 }
 
@@ -252,6 +289,11 @@ img {
     background: linear-gradient(to right, #31d35c, #2bb7da);
     color: white;
     font-weight: 700;
+    cursor: pointer;
+  }
+  .main_image_wrapper main button:hover {
+    background: -webkit-gradient(linear, left top, right top, from(#5ef386), to(#54dafc));
+    background: linear-gradient(to right, #5ef386, #54dafc);
   }
   .main_image_wrapper .mobile_intro {
     display: none;
@@ -266,7 +308,8 @@ img {
   .main_image_wrapper .mockup {
     position: absolute;
     right: 0;
-    top: 0;
+    top: -2.5rem;
+    z-index: -1;
     max-width: 50%;
   }
 }
@@ -405,6 +448,8 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0.5px 0.5px 0.5px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0.5px 0.5px 0.5px;
 }
 
 .articles .articles_wrapper .article_container img {
@@ -434,6 +479,11 @@ img {
   color: #2d314d;
   font-weight: 300;
   font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.articles .articles_wrapper .article_container article h3:hover {
+  color: #31d35c;
 }
 
 .articles .articles_wrapper .article_container article p {
@@ -459,7 +509,7 @@ img {
             flex-direction: row;
   }
   .articles .articles_wrapper .article_container img {
-    max-height: 12.5rem;
+    height: 12.5rem;
   }
 }
 
@@ -498,6 +548,14 @@ footer .logo_socials_wrapper .socials ul {
   gap: .75rem;
 }
 
+footer .logo_socials_wrapper .socials ul a svg {
+  fill: white;
+}
+
+footer .logo_socials_wrapper .socials ul a svg:hover {
+  fill: #31d35c;
+}
+
 footer nav ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -533,6 +591,10 @@ footer nav ul .links_row a {
   font-size: .9rem;
 }
 
+footer nav ul .links_row a:hover {
+  color: #31d35c;
+}
+
 footer .request_copyright_wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -555,6 +617,11 @@ footer .request_copyright_wrapper button {
   background: linear-gradient(to right, #31d35c, #2bb7da);
   color: white;
   font-weight: 700;
+}
+
+footer .request_copyright_wrapper button:hover {
+  background: -webkit-gradient(linear, left top, right top, from(#5ef386), to(#54dafc));
+  background: linear-gradient(to right, #5ef386, #54dafc);
 }
 
 footer .request_copyright_wrapper p {

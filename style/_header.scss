@@ -28,7 +28,7 @@
                 border-radius: .25rem;
                 z-index: 97;
                 position: fixed;
-                top: 100rem;
+                top: 999rem;
                 left: 0;
                 right: 0;
                 margin: auto;
@@ -63,8 +63,10 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 2rem 10rem;
+        padding: 0 10rem;
+        height: 5rem;
         background: #fff;
+        position: relative;
 
         .hamburger {
             display: none;
@@ -74,7 +76,33 @@
             flex-grow: 1;
         }
 
+        
         .nav-ul {
+            .underline {
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                height: 5rem;
+                justify-content: center;
+                align-items: center;
+                
+                .line {
+                    bottom: 0;
+                    width: 100%;
+                    opacity: 0;
+                    height: .25rem;
+                    background: linear-gradient(to right, #31d35c, #2bb7da);
+                    position: absolute;
+                }
+
+                &:hover {
+                    .line {
+                        opacity: 1;
+                        transition: 0.3s ease;
+                    }
+                }
+            }
+
             .centered {
                 margin-left: auto;
             }
@@ -95,11 +123,13 @@
                     background: linear-gradient(to right, #31d35c, #2bb7da);
                     color: $white;
                     font-weight: 700;
+
+                    &:hover {
+                        background: linear-gradient(to right, #5ef386, #54dafc);
+                    }
                 }
             }
 
         }
-
-        
     }
 }

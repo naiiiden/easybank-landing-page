@@ -97,6 +97,11 @@
                 background: linear-gradient(to right, #31d35c, #2bb7da);
                 color: $white;
                 font-weight: 700;
+                cursor: pointer;
+
+                &:hover {
+                    background: linear-gradient(to right, #5ef386, #54dafc);
+                }
             }
         }
 
@@ -115,7 +120,8 @@
         .mockup {
             position: absolute;
             right: 0;
-            top: 0;
+            top: -2.5rem;
+            z-index: -1;
             max-width: 50%;
         }
     }
