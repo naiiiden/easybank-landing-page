@@ -83,8 +83,9 @@
                 cursor: pointer;
 
                 &.request {
-                    border: 1px solid red;
-                    background: green;
+                    padding: .75rem 1.25rem;
+                    border-radius: 2rem;
+                    background: linear-gradient(to right, #31d35c, #2bb7da);
                     color: $white;
                     font-weight: 700;
                 }
