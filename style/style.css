@@ -198,7 +198,7 @@ img {
     font-weight: 300;
   }
   .main_image_wrapper .main p {
-    color: hsl(233deg, 8%, 62%);
+    color: #545463;
     font-size: 0.9rem;
   }
   .main_image_wrapper .main button {
@@ -232,7 +232,7 @@ img {
     font-size: 3rem;
   }
   .main_image_wrapper .main p {
-    color: hsl(233deg, 8%, 62%);
+    color: #545463;
     font-size: 1rem;
   }
   .main_image_wrapper .main button {
