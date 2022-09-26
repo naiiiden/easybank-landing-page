@@ -161,7 +161,7 @@ img {
     height: 24.25rem;
     z-index: -1;
   }
-  .main_image_wrapper main {
+  .main_image_wrapper .main {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -169,15 +169,15 @@ img {
     gap: 1rem;
     padding: 0 1rem 1rem 1rem;
   }
-  .main_image_wrapper main h1 {
+  .main_image_wrapper .main h1 {
     color: hsl(233deg, 26%, 24%);
     font-weight: 300;
   }
-  .main_image_wrapper main p {
+  .main_image_wrapper .main p {
     color: hsl(233deg, 8%, 62%);
     font-size: 0.9rem;
   }
-  .main_image_wrapper main button {
+  .main_image_wrapper .main button {
     border: none;
     padding: 0.75rem 1.25rem;
     border-radius: 2rem;
@@ -195,23 +195,23 @@ img {
     justify-content: space-between;
     position: relative;
   }
-  .main_image_wrapper main {
+  .main_image_wrapper .main {
     width: 30%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 1rem;
   }
-  .main_image_wrapper main h1 {
+  .main_image_wrapper .main h1 {
     color: hsl(233deg, 26%, 24%);
     font-weight: 300;
     font-size: 3rem;
   }
-  .main_image_wrapper main p {
+  .main_image_wrapper .main p {
     color: hsl(233deg, 8%, 62%);
     font-size: 1rem;
   }
-  .main_image_wrapper main button {
+  .main_image_wrapper .main button {
     border: none;
     padding: 0.75rem 1.25rem;
     border-radius: 2rem;
@@ -220,7 +220,7 @@ img {
     font-weight: 700;
     cursor: pointer;
   }
-  .main_image_wrapper main button:hover {
+  .main_image_wrapper .main button:hover {
     background: linear-gradient(to right, #5ef386, #54dafc);
   }
   .main_image_wrapper .mobile_intro {
