@@ -358,7 +358,7 @@ img {
   gap: 0.5rem;
 }
 .articles .articles_wrapper .article_container article small {
-  color: hsl(233deg, 8%, 62%);
+  color: #545463;
   font-size: 0.7rem;
 }
 .articles .articles_wrapper .article_container article h3 {
@@ -372,7 +372,7 @@ img {
 }
 .articles .articles_wrapper .article_container article p {
   font-size: 0.9rem;
-  color: hsl(233deg, 8%, 62%);
+  color: #545463;
 }
 
 @media screen and (min-width: 1024px) {
