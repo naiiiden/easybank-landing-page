@@ -115,7 +115,7 @@ img {
     margin-left: auto;
   }
   header .nav-ul a {
-    color: hsl(233deg, 8%, 62%);
+    color: #575766;
     text-decoration: none;
     cursor: pointer;
     font-size: 0.9rem;
