@@ -285,7 +285,7 @@ img {
 }
 .choice .why p {
   font-size: 0.9rem;
-  color: hsl(233deg, 8%, 62%);
+  color: #50505E;
 }
 .choice .sections_row {
   display: flex;
@@ -305,7 +305,7 @@ img {
 }
 .choice .sections_row section p {
   font-size: 0.9rem;
-  color: hsl(233deg, 8%, 62%);
+  color: #50505E;
 }
 
 @media screen and (min-width: 1024px) {
