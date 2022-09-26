@@ -456,7 +456,7 @@ footer .request_copyright_wrapper button:hover {
   background: linear-gradient(to right, #5ef386, #54dafc);
 }
 footer .request_copyright_wrapper p {
-  color: hsl(233deg, 8%, 62%);
+  color: #C0C0C9;
   font-size: 0.9rem;
 }
 
